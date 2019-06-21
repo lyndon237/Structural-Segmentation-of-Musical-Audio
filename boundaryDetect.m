@@ -8,7 +8,6 @@ n = size(C,2);
 S = zeros(n); %Initializing the self-similarity matrix S
 C = C/max(max(C)); %normalizing C
 kc = 96; %size of Gaussian kernel for the novelty measure
-         %give credit to author in report.
 for i = 1:n
     for j = 1:n
         S(i,j) = norm(C(:,i)-C(:,j));
